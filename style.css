@@ -1,0 +1,32 @@
+:root{
+  --main-bg-color: orange;
+  --static-width: 30%;
+  --static-heigth: 200px;
+}
+
+ 
+
+.bgc{
+  background-color: var(--main-bg-color);
+  padding: 2em;
+  width: 50vw;
+}
+
+.container{
+  width: 80vw;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+}
+
+.static{
+  width: var(--static-width);
+  height: var(--static-heigth);
+  background-color: tomato;
+}
+
+.leftover{
+  width: calc(100% - var(--static-width));
+  height: var(--static-heigth);
+  background-color: yellow;
+}
